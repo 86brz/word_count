@@ -1,0 +1,14 @@
+<h1>统计结果为{{ count }}个字</h1>
+<a href="..">单击回到主页</a>
+<br>
+<a href="../about">点击查看本网站的关于信息</a>
+<h2>你的文本是：</h2>
+{{  text  }}
+<br>
+<h2>各文字出现频率是：</h2>
+
+<br>
+{% for word,count in sorted	%}
+{{  word }}--{{  count  }}
+<br>
+{% endfor %}
